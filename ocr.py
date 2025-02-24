@@ -105,8 +105,8 @@ Extract relevant diagnostic details from the given medical diagnostic report and
 """
 
 food_item_prompt = """
-"You are an expert in nutritionist .
-Extract relevant food details from the given input and provide the output in structured JSON format. Ensure that only food-related information is captured, including food name, standard nutritional values per unit. The JSON should follow this format:"
+"You are an expert nutritionist. Analyze the given image and extract relevant food details. Identify the food items present in the image and provide their standard nutritional values per unit based on commonly available nutritional data. If multiple items are detected, list them separately. The JSON output should strictly follow this format:"
+
 {
   "food_items": [
     {
@@ -132,7 +132,7 @@ Extract relevant food details from the given input and provide the output in str
     }
   ]
 }
-"Ensure the extracted data follows this structure while accurately representing the food items and their nutritional values. Remember return in JSON"
+"Ensure the extracted data follows this structure while accurately identifying and representing the food items and their standard nutritional values. Return the final output strictly in JSON format."
 """
 
 ## If submit button is clicked
