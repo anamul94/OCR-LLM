@@ -35,7 +35,7 @@ def input_image_setup(uploaded_file):
         raise FileNotFoundError("No file uploaded")
 ##initialize our streamlit app
 
-st.set_page_config(page_title="Gemini OCR App")
+st.set_page_config(page_title="OCR App")
 
 st.header("Gemini OCR App")
 # input=st.text_input("Input Prompt: ",key="input")
