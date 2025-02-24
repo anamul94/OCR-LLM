@@ -37,7 +37,7 @@ def input_image_setup(uploaded_file):
 
 st.set_page_config(page_title="OCR App")
 
-st.header("Gemini OCR App")
+st.header("OCR App")
 # input=st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
