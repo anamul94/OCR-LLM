@@ -45,8 +45,6 @@ This application follows **HIPAA-compliant best practices** to protect your heal
 - **No data is stored or shared** after processing.  
 - **End-to-end encryption** is used for secure transmission.  
 - AI-generated insights are **for informational purposes only** and should not replace professional medical advice.  
-
-For privacy concerns, please refer to our [Privacy Policy](#).
 """)
 
 # input=st.text_input("Input Prompt: ",key="input")
