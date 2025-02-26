@@ -38,7 +38,6 @@ def input_image_setup(uploaded_file):
 st.set_page_config(page_title="Health & Nutrition Analyzer – AI-Powered OCR")
 
 st.header("Health & Nutrition Analyzer – AI-Powered OCR")
-st.write("Upload an image of a **medical report** or **food items**, and this AI-powered tool will extract relevant details in structured JSON format.")
 st.markdown("""
 ### 🔒 HIPAA Compliance Notice  
 This application follows **HIPAA-compliant best practices** to protect your health information:  
@@ -46,6 +45,9 @@ This application follows **HIPAA-compliant best practices** to protect your heal
 - **End-to-end encryption** is used for secure transmission.  
 - AI-generated insights are **for informational purposes only** and should not replace professional medical advice.  
 """)
+
+st.write("Upload an image of a **medical report** or **food items**, and this AI-powered tool will extract relevant details in structured JSON format.")
+
 
 # input=st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
@@ -57,13 +59,13 @@ if uploaded_file is not None:
 food = "Food"
 medical = "Medical"
 options = st.selectbox(
-    "PLZ Select File Type",
+    "Plz Select a Category",
     (food, medical),
 )
 
 
 
-submit=st.button("Describe and extract value in json format")
+submit=st.button("Describe and extract value in JSON format")
 
 
 medical_report_prompt="""
