@@ -35,9 +35,10 @@ def input_image_setup(uploaded_file):
         raise FileNotFoundError("No file uploaded")
 ##initialize our streamlit app
 
-st.set_page_config(page_title="OCR App")
+st.set_page_config(page_title="Health & Nutrition Analyzer – AI-Powered OCR")
 
-st.header("OCR App")
+st.header("Health & Nutrition Analyzer – AI-Powered OCR")
+st.write("Upload an image of a **medical report** or **food items**, and this AI-powered tool will extract relevant details in structured JSON format.")
 # input=st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
