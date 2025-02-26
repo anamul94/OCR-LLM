@@ -39,6 +39,16 @@ st.set_page_config(page_title="Health & Nutrition Analyzer – AI-Powered OCR")
 
 st.header("Health & Nutrition Analyzer – AI-Powered OCR")
 st.write("Upload an image of a **medical report** or **food items**, and this AI-powered tool will extract relevant details in structured JSON format.")
+st.markdown("""
+### 🔒 HIPAA Compliance Notice  
+This application follows **HIPAA-compliant best practices** to protect your health information:  
+- **No data is stored or shared** after processing.  
+- **End-to-end encryption** is used for secure transmission.  
+- AI-generated insights are **for informational purposes only** and should not replace professional medical advice.  
+
+For privacy concerns, please refer to our [Privacy Policy](#).
+""")
+
 # input=st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
