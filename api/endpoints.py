@@ -5,7 +5,10 @@ from services.gemini import analyze_with_gemini
 from services.groq import analyze_with_groq
 from services.image import validate_and_process_image
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/api/v1",
+    tags=["analyze"]
+)
 
 @router.get("/", response_model=dict)
 async def root():
@@ -18,7 +21,7 @@ async def root():
         }
     }
 
-@router.post("/api/analyze", response_model=dict)
+@router.post("/analyze", response_model=dict)
 async def analyze_image(
     file: UploadFile = File(...),
     category: Category = Form(...)
