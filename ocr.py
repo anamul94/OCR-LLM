@@ -156,7 +156,7 @@ if options == medical:
 
 if submit:
     image_data=input_image_setup(uploaded_file)
-    response=get_gemini_repsonse(input_prompt,image_data, "")
+    response=get_gemini_repsonse(input_prompt,image_data, "Return JSON")
     print(response)
     st.subheader("The Response is")
     st.write(response)
