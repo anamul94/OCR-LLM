@@ -37,7 +37,7 @@ async def analyze_image(
         
         # Analyze the image using Gemini
         # result = analyze_with_gemini(image_parts, category)
-        result = analyze_with_groq(image_parts, category)
+        result = analyze_with_gemini(image_parts, category)
         
         return result
         
